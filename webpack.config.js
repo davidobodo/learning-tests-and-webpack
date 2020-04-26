@@ -1,8 +1,9 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+var mode = process.env.NODE_ENV || 'development';
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: "./src/index.js",
     output: {
         filename: "[name].[contentHash].bundle.js",
@@ -27,11 +28,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'index.html',
             inject: 'body'
-        })
+        }),
+        new CleanWebpackPlugin()
     ],
     devServer: {
         contentBase: path.resolve(__dirname, "dist"),
         port: 3000,
         compress: true
-    }
+    },
+    mode: mode,
+    devtool: (mode === 'development') ? 'eval-cheap-module-source-map' : 'source-map',
 }
