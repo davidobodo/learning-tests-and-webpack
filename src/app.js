@@ -1,10 +1,11 @@
 import React from 'react';
+import { AppContainer } from './appStyle';
 
 const App = () => {
     return (
-        <div>
+        <AppContainer>
             Hello this is my app built with webpack from scratch
-        </div>
+        </AppContainer>
     )
 }
 
