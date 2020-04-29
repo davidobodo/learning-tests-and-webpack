@@ -4,7 +4,7 @@ var mode = process.env.NODE_ENV || 'development';
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./src/index.tsx",
     output: {
         filename: "[name].[contentHash].bundle.js",
         path: path.resolve(__dirname, "dist")
@@ -21,8 +21,16 @@ module.exports = {
                         plugins: ["babel-plugin-styled-components"]
                     }
                 }
+            },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             }
         ]
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -33,7 +41,7 @@ module.exports = {
     ],
     devServer: {
         contentBase: path.resolve(__dirname, "dist"),
-        port: 3000,
+        port: 8000,
         compress: true
     },
     mode: mode,
