@@ -60,9 +60,8 @@ const Auth = () => {
 
     const [err, setErr] = useState(true)
 
-    const handleOnChange = e => {
+    const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
-
 
         if (name === 'fullName') {
             setFullName({ ...fullName, value })
@@ -114,7 +113,7 @@ const Auth = () => {
 
     }
 
-    const validateFullName = (value) => {
+    const validateFullName = (value: string) => {
         const wordCount = value.split(' ').filter(word => word !== '').length;
 
         if (value.length < 2) {
@@ -126,7 +125,7 @@ const Auth = () => {
         }
     }
 
-    const validateEmail = (value) => {
+    const validateEmail = (value: string) => {
         var isValid = handleCheckEmailValidity(value)
         if (!isValid) {
             setEmail({ ...email, hasError: true, errorMessage: 'Please enter a valid email' })
@@ -135,7 +134,7 @@ const Auth = () => {
         }
     }
 
-    const validatePhoneNumber = (value) => {
+    const validatePhoneNumber = (value: string) => {
         if (value.length !== 11) {
             setPhone({ ...phone, hasError: true, errorMessage: 'Phone number must be 11 characters' })
         } else if (value[0] !== '0') {
@@ -145,7 +144,7 @@ const Auth = () => {
         }
     }
 
-    const validatePassword = (value) => {
+    const validatePassword = (value: string) => {
         var isValid = handleCheckPasswordValidity(value)
         if (!isValid || value.length < 6) {
             setPassword({ ...password, hasError: true, errorMessage: 'Password must contain at least one uppercase character, one number, special character and not shorter than six characters' })
@@ -154,7 +153,7 @@ const Auth = () => {
         }
     }
 
-    const validateConfirmPassword = (value) => {
+    const validateConfirmPassword = (value: string) => {
         if (value !== password.value) {
             setConfirmPassword({ ...confirmPassword, hasError: true, errorMessage: 'Must match password field' })
         } else {
@@ -162,7 +161,7 @@ const Auth = () => {
         }
     }
 
-    const validateCardNumber = (value) => {
+    const validateCardNumber = (value: string) => {
         if (value.length !== 19) {
             setCardNumber({ ...cardNumber, hasError: true, errorMessage: "Card Number must be 16 digits" });
         } else {
@@ -170,19 +169,19 @@ const Auth = () => {
         }
     }
 
-    const validateExpiryDate = (value) => {
+    const validateExpiryDate = (value: string) => {
         const day = value.slice(0, 2);
-
+        1
         if (value.length !== 5) {
             setExpiryDate({ ...expiryDate, hasError: true, errorMessage: "enter complete date" });
-        } else if (day < 1 || day > 31) {
+        } else if (day < '1' || day > '31') {
             setExpiryDate({ ...expiryDate, hasError: true, errorMessage: "enter a valid day" });
         } else {
             setExpiryDate({ ...expiryDate, hasError: false, errorMessage: "" });
         }
     }
 
-    const validatePin = (value) => {
+    const validatePin = (value: string) => {
         if (value.length !== 4) {
             setPin({ ...pin, hasError: true, errorMessage: "card pin must be 4 digits" });
         } else {
@@ -190,7 +189,7 @@ const Auth = () => {
         }
     }
 
-    const handleValidateInput = e => {
+    const handleValidateInput = (e: React.ChangeEvent<HTMLFormElement>) => {
         const { name, value } = e.target;
 
         switch (name) {
@@ -221,7 +220,7 @@ const Auth = () => {
         }
     }
 
-    const handleOnSubmit = (e) => {
+    const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         alert('e dey work well well')
     }
