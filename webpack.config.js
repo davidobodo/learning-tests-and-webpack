@@ -4,7 +4,7 @@ var mode = process.env.NODE_ENV || 'development';
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: "./src/index.js",
     output: {
         filename: "[name].[contentHash].bundle.js",
         path: path.resolve(__dirname, "dist")
@@ -22,16 +22,16 @@ module.exports = {
                     }
                 }
             },
-            {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/,
-            }
+            // {
+            //     test: /\.tsx?$/,
+            //     use: 'ts-loader',
+            //     exclude: /node_modules/,
+            // }
         ]
     },
-    resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
-    },
+    // resolve: {
+    //     extensions: ['.tsx', '.ts', '.js'],
+    // },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'index.html',

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { InputContainer } from './style';
-import { props } from './TInput';
 
 
 
-const Input: React.FC<props> = ({ type, name, placeholder, value, handleOnChange, handleOnBlur, hasError, errorMessage, title }) => {
+const Input = ({ type, name, placeholder, value, handleOnChange, handleOnBlur, hasError, errorMessage, title }) => {
     const [focus, setFocus] = useState(false)
     return (
         <InputContainer focus={focus}>

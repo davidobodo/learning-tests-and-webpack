@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { props } from './TInput';
 
 
-export const InputContainer = styled.div<Partial<props>>`
+export const InputContainer = styled.div`
     position: relative;
 
     .input-field{
