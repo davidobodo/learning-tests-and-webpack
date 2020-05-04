@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly inputs 1`] = `
+<div
+  className="sc-AxhCb cNhBOm"
+>
+  <form
+    className="sc-AxirZ dLptuK"
+    onSubmit={[Function]}
+  >
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="fullName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Obodo David"
+        type="text"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Full Name
+      </label>
+    </div>
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="obododavid@gmail.com"
+        type="email"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Email
+      </label>
+    </div>
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="phone"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="080XXXXXXXX"
+        type="tel"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Phone Number
+      </label>
+    </div>
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="password"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Password"
+        type="password"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Password
+      </label>
+    </div>
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="confirmPassword"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Confirm Password"
+        type="password"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Confirm Password
+      </label>
+    </div>
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="cardNumber"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="XXXX XXXX XXXX XXXX"
+        type="text"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Card Number
+      </label>
+    </div>
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="expiryDate"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="mm/yy"
+        type="text"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Expiry Date
+      </label>
+    </div>
+    <div
+      className="sc-AxjAm kUeQQo"
+    >
+      <input
+        className="input-field"
+        name="pin"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="****"
+        type="password"
+        value=""
+      />
+      <label
+        className="input-label"
+      >
+        Pin
+      </label>
+    </div>
+    <button
+      className="sc-AxiKw eutMqT"
+      disabled={true}
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;

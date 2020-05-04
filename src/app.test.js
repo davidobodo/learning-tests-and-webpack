@@ -6,5 +6,6 @@ import App from './app';
 // import {configure } from 'enzyme';
 
 test('render correctly inputs', () => {
-    const component = renderer.create(<App/>).toJSON()
+    const component = renderer.create(<App />).toJSON();
+    expect(component).toMatchSnapshot();
 })
