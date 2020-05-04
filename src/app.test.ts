@@ -1,3 +1,4 @@
+
 import { unmountComponentAtNode } from "react-dom";
 
 let container = null;
@@ -13,4 +14,5 @@ afterEach(() => {
     container = null;
 });
 
-it('renders correctly')
+// it('renders correctly')
+
