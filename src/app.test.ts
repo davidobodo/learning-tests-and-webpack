@@ -1,18 +1,10 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import App from './app';
 
-import { unmountComponentAtNode } from "react-dom";
+// import Adapter from 'enzyme-adapter-react-16';
+// import {configure } from 'enzyme';
 
-let container = null;
-
-beforeEach(() => {
-    container = document.createElement("div");
-    document.body.appendChild(container);
-});
-
-afterEach(() => {
-    unmountComponentAtNode(container);
-    container.remove();
-    container = null;
-});
-
-// it('renders correctly')
-
+test('render correctly inputs', () => {
+    const component = renderer.create(<App/>).toJSON()
+})
