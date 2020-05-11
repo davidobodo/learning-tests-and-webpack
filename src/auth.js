@@ -317,7 +317,9 @@ const Auth = () => {
                     handleOnBlur={handleValidateInput} />
             })}
 
-            <Button disabled={err}>Submit</Button>
+            <Button
+                disabled={err}
+                data-testid="submit-button">Submit</Button>
         </AuthContainer>
     )
 }

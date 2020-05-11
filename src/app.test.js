@@ -7,7 +7,6 @@ afterEach(cleanup);
 
 it('should take a snapshot', () => {
     const { asFragment } = render(<App />);
-
     expect(asFragment(<App />)).toMatchSnapshot();
 })
 
@@ -24,7 +23,8 @@ it('Phone number should contain only letters', () => {
 })
 
 it('should display a button', () => {
-    // const button = render(<App />).ge
+    const { getByTestId } = render(<App />);
+    expect(getByTestId('submit-button').textContent).toBe('Submit')
 })
 
 
