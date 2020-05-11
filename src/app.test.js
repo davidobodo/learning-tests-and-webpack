@@ -5,11 +5,11 @@ import { cleanup, fireEvent, render } from '@testing-library/react';
 
 afterEach(cleanup);
 
-// it('should take a snapshot', () => {
-//     const { asFragment } = render(<App />);
+it('should take a snapshot', () => {
+    const { asFragment } = render(<App />);
 
-//     expect(asFragment(<App />)).toMatchSnapshot;
-// })
+    expect(asFragment(<App />)).toMatchSnapshot();
+})
 
 it('Full name should change input value', () => {
     const input = render(<App />).getByPlaceholderText('Obodo David');;

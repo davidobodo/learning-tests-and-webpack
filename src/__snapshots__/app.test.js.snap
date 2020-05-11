@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxhCb cNhBOm"
+  >
+    <form
+      class="sc-AxirZ dLptuK"
+    >
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="fullName"
+          placeholder="Obodo David"
+          type="text"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Full Name
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="email"
+          placeholder="obododavid@gmail.com"
+          type="email"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Email
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="phone"
+          placeholder="080XXXXXXXX"
+          type="tel"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Phone Number
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="password"
+          placeholder="Password"
+          type="password"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Password
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+          type="password"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Confirm Password
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="cardNumber"
+          placeholder="XXXX XXXX XXXX XXXX"
+          type="text"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Card Number
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="expiryDate"
+          placeholder="mm/yy"
+          type="text"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Expiry Date
+        </label>
+      </div>
+      <div
+        class="sc-AxjAm kUeQQo"
+      >
+        <input
+          class="input-field"
+          name="pin"
+          placeholder="****"
+          type="password"
+          value=""
+        />
+        <label
+          class="input-label"
+        >
+          Pin
+        </label>
+      </div>
+      <button
+        class="sc-AxiKw eutMqT"
+        disabled=""
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

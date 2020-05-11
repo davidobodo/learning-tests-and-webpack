@@ -11,7 +11,7 @@ const handleCheckPasswordValidity = value => new RegExp(/^(?=.*[A-Z])(?=.*[0-9])
 const Auth = () => {
 
     const [fullName, setFullName] = useState({
-        value: 'david',
+        value: '',
         hasError: false,
         errorMessage: ''
     })
