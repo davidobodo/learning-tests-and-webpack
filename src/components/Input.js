@@ -5,6 +5,9 @@ import { InputContainer } from './style';
 
 const Input = ({ type, name, placeholder, value, handleOnChange, handleOnBlur, hasError, errorMessage, title }) => {
     const [focus, setFocus] = useState(false)
+
+
+
     return (
         <InputContainer focus={focus}>
             <input
