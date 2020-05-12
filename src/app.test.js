@@ -34,7 +34,6 @@ it('should be disabled initially', () => {
     expect(getByTestId('submit-button')).toBeDisabled();
 })
 
-
 it('label should change position when input is focused', () => {
     const { queryByText, getByLabelText } = render(<App />)
     const input = getByLabelText('Obodo David');
