@@ -29,12 +29,12 @@ it('should display a button with text submit', () => {
     expect(getByTestId('submit-button')).toHaveTextContent('Submit')
 })
 
-it('should be disabled initially', () => {
+it('Button should be disabled initially', () => {
     const { getByTestId } = render(<App />);
     expect(getByTestId('submit-button')).toBeDisabled();
 })
 
-it('label should change position when input is focused', () => {
+it('Input label should change position when input is focused', () => {
     const { queryByText, getByLabelText } = render(<App />)
     const input = getByLabelText('Obodo David');
     input.focus();
