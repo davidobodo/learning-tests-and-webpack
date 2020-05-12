@@ -1,32 +1,51 @@
 import React from 'react';
 import App from './app';
+import Input from './components/Input';
 import { cleanup, fireEvent, render } from '@testing-library/react';
+import "@testing-library/jest-dom";
 
 
 afterEach(cleanup);
 
 it('should take a snapshot', () => {
-    const { asFragment } = render(<App />);
-    expect(asFragment(<App />)).toMatchSnapshot();
+    const { container } = render(<App />);
+    expect(container).toMatchSnapshot();
 })
 
 it('Full name should change input value', () => {
-    const input = render(<App />).getByPlaceholderText('Obodo David');;
+    const input = render(<App />).getByLabelText('Obodo David');
     fireEvent.change(input, { target: { value: 'rukky' } })
     expect(input.value).toBe('rukky')
 })
 
 it('Phone number should contain only letters', () => {
-    const input = render(<App />).getByPlaceholderText('080XXXXXXXX');;
+    const input = render(<App />).getByLabelText('080XXXXXXXX');
     fireEvent.change(input, { target: { value: '78ruk9ky' } })
     expect(input.value).toBe('789')
 })
 
-it('should display a button', () => {
+it('should display a button with text submit', () => {
     const { getByTestId } = render(<App />);
-    expect(getByTestId('submit-button').textContent).toBe('Submit')
+    expect(getByTestId('submit-button')).toHaveTextContent('Submit')
 })
 
+it('should be disabled', () => {
+    const { getByTestId } = render(<App />);
+    expect(getByTestId('submit-button')).toBeDisabled();
+})
+
+
+it('label should change position when input is focused', () => {
+    const { queryByText, getByLabelText } = render(<App />)
+    const input = getByLabelText('Obodo David');
+    input.focus();
+    expect(queryByText('Full Name')).toHaveStyle('top: -11px; left: 12px;')
+})
+
+it('should render a snapshot of input field with a class of error', () => {
+    const { container } = render(<Input hasError={true} />);
+    expect(container).toMatchSnapshot();
+})
 
 
 

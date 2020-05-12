@@ -299,7 +299,6 @@ const Auth = () => {
             state: pin
         },
     ]
-
     return (
         <AuthContainer onSubmit={handleOnSubmit}>
             {input_fields.map((field, i) => {

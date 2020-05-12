@@ -1,7 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render a snapshot 1`] = `
+<div>
+  <div
+    class="sc-AxjAm kUeQQo"
+  >
+    <input
+      class="input-field error"
+      data-testid="input-field"
+      value=""
+    />
+    <label
+      class="input-label"
+      data-testid="input-label"
+    />
+    <h6
+      class="error-message"
+    >
+      <span>
+        !
+      </span>
+    </h6>
+  </div>
+</div>
+`;
+
 exports[`should take a snapshot 1`] = `
-<DocumentFragment>
+<div>
   <div
     class="sc-AxhCb cNhBOm"
   >
@@ -12,7 +37,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="Obodo David"
           class="input-field"
+          data-testid="input-field"
+          id="Full Name"
           name="fullName"
           placeholder="Obodo David"
           type="text"
@@ -20,6 +48,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Full Name"
         >
           Full Name
         </label>
@@ -28,7 +58,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="obododavid@gmail.com"
           class="input-field"
+          data-testid="input-field"
+          id="Email"
           name="email"
           placeholder="obododavid@gmail.com"
           type="email"
@@ -36,6 +69,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Email"
         >
           Email
         </label>
@@ -44,7 +79,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="080XXXXXXXX"
           class="input-field"
+          data-testid="input-field"
+          id="Phone Number"
           name="phone"
           placeholder="080XXXXXXXX"
           type="tel"
@@ -52,6 +90,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Phone Number"
         >
           Phone Number
         </label>
@@ -60,7 +100,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="Password"
           class="input-field"
+          data-testid="input-field"
+          id="Password"
           name="password"
           placeholder="Password"
           type="password"
@@ -68,6 +111,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Password"
         >
           Password
         </label>
@@ -76,7 +121,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="Confirm Password"
           class="input-field"
+          data-testid="input-field"
+          id="Confirm Password"
           name="confirmPassword"
           placeholder="Confirm Password"
           type="password"
@@ -84,6 +132,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Confirm Password"
         >
           Confirm Password
         </label>
@@ -92,7 +142,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="XXXX XXXX XXXX XXXX"
           class="input-field"
+          data-testid="input-field"
+          id="Card Number"
           name="cardNumber"
           placeholder="XXXX XXXX XXXX XXXX"
           type="text"
@@ -100,6 +153,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Card Number"
         >
           Card Number
         </label>
@@ -108,7 +163,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="mm/yy"
           class="input-field"
+          data-testid="input-field"
+          id="Expiry Date"
           name="expiryDate"
           placeholder="mm/yy"
           type="text"
@@ -116,6 +174,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Expiry Date"
         >
           Expiry Date
         </label>
@@ -124,7 +184,10 @@ exports[`should take a snapshot 1`] = `
         class="sc-AxjAm kUeQQo"
       >
         <input
+          aria-label="****"
           class="input-field"
+          data-testid="input-field"
+          id="Pin"
           name="pin"
           placeholder="****"
           type="password"
@@ -132,6 +195,8 @@ exports[`should take a snapshot 1`] = `
         />
         <label
           class="input-label"
+          data-testid="input-label"
+          for="Pin"
         >
           Pin
         </label>
@@ -145,5 +210,5 @@ exports[`should take a snapshot 1`] = `
       </button>
     </form>
   </div>
-</DocumentFragment>
+</div>
 `;
