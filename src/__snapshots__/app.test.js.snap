@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a snapshot 1`] = `
+exports[`should render a snapshot of input field with a class of error 1`] = `
 <div>
   <div
     class="sc-AxjAm kUeQQo"
